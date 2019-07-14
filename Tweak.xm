@@ -19,7 +19,7 @@ static BOOL shouldShowPercentSymbol = YES;
     
     percentS = [NSString stringWithFormat:@"%ld", percentI];
     
-	return [self imageWithText:shouldShowPercentSymbol ? [percentS stringByAppendingString:@"%"] : percentS];
+	return [self imageWithText:shouldShowPercentSymbol ? [percentS stringByAppendingString:@" %"] : percentS];
 }
 
 
