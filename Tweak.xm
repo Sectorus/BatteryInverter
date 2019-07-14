@@ -1,7 +1,7 @@
 #import <UIKit/UIKit.h>
 #import <substrate.h>
 
-static BOOL shouldShowPercentSymbol = YES;
+static BOOL percent_symbol = YES;
 
 @interface UIStatusBarItemView : UIView
 - (id)imageWithText:(id)arg1;
@@ -19,7 +19,7 @@ static BOOL shouldShowPercentSymbol = YES;
     
     percentS = [NSString stringWithFormat:@"%ld", percentI];
     
-	return [self imageWithText:shouldShowPercentSymbol ? [percentS stringByAppendingString:@" %"] : percentS];
+	return [self imageWithText:percent_symbol ? [percentS stringByAppendingString:@" %"] : percentS];
 }
 
 
